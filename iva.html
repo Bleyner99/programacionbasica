@@ -1,0 +1,122 @@
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<table id="items">
+
+	<tbody>
+       
+        <tr class="item-row">
+			<td class="item-name">
+			<div class="delete-wpr">
+Precio vehiculo
+			</div></td>
+
+			<td>			
+              <input type="text" id="cantidad_precio" class="cost" placeholder="$0.00"/>
+
+            
+            </td>
+
+            <td>
+                
+              <input type="text" class="price iv" disabled/>
+            </td>
+			<td>
+        
+        <input type="text" class="iva" disabled/>
+          </td>
+		</tr>
+         <tr>
+		  
+		      <th>Opcional</th>
+		      <th>Precio</th>
+		      <th>Iva</th>
+		      <th>Total</th>
+		  </tr>
+		<tr class="item-row">
+			<td class="item-name">
+			<div class="delete-wpr">
+				Opcional 1
+			</div></td>
+
+			<td>			  <input type="text" class="cost opc" placeholder="$0.00"/></td>
+
+			<td> <input type="text" class="price iv" disabled/></td>
+			<td>			<input type="text" class="iva" disabled/></td>
+		</tr>
+		<tr class="item-row">
+			<td class="item-name">
+			<div class="delete-wpr">
+Opcional 2
+			</div></td>
+
+			<td>			  <input type="text" class="cost opc" placeholder="$0.00"/></td>
+			<td>			 <input type="text" class="price iv" disabled/></td>
+			<td><input type="text" class="iva" disabled/></td>
+		</tr>
+
+		<td colspan="2" class="blank"></td>
+		<td colspan="2" class="total-line">Precio</td>
+		<td class="total-value">
+		<div id="subtotal">
+            <input type="number" id="precio_cotiza" placeholder="$0.00" disabled/>
+		</div>
+            </td>
+		
+		<tr>
+
+			<td colspan="2" class="blank"></td>
+			<td colspan="2" class="total-line">Total Opcionales</td>
+			<td class="total-value">
+			<div id="total">
+                <input type="number" id="total_opcionales" placeholder="$0.00" disabled/>
+			</div>
+            </td>
+		</tr>
+		<tr>
+			<td colspan="2" class="blank"></td>
+			<td colspan="2" class="total-line">Total iva</td>
+
+			<td class="total-value">			
+                <input type="number" id="total_iva" placeholder="$0.00" disabled/>
+            </td>
+		</tr>
+		<tr>
+			<td colspan="2" class="blank"></td>
+			<td colspan="2" class="total-line balance">Total</td>
+			<td class="total-value balance">
+			<div class="due">
+				<input type="number" id="total_total" placeholder="$0.00" disabled>
+			</div></td>
+		</tr>
+
+	</tbody>
+</table>
+
+	<section class="pagos2">
+							<p>
+								Tiempo de entrega: <span>
+									<input type="number" id="dias" name="dias" placeholder="12" required=""/>
+									días hábiles después del anticipo.</span>
+							</p>
+							<p>
+								L.A.B.: <span></span>
+							</p>
+							<p>
+								Condiciones de pago: $
+								<input type="number" id="fifty" name="fifty" readonly />
+								<select name="porcentaje" id="porcentaje">
+									<option value="0" selected>0</option>
+									<option value="0.2">20 </option>
+									<option value="0.3">30 </option>
+									<option value="0.4">40 </option>
+									<option value="0.5">50 </option>
+									<option value="0.6">60 </option>
+									<option value="0.7">70 </option>
+								</select>
+								% de anticipo y  $
+								<input type="number" class="fifty2" id="fifty2" name="fifty2" readonly/>
+								<input type="number" id="porcentaje2" name="porcentaje2" readonly />
+								% contra entrega.</span>
+							</p>
+                            <script src="./iva.js"></script>
+						</section>
