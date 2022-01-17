@@ -14,7 +14,7 @@ function onClickButtonPriceDiscount() {
       "NNSS",
       "RRTT",
       "PPP",
-    
+      
   ];
 
   const inputPrice = document.getElementById("InputPrice");
@@ -39,19 +39,17 @@ function onClickButtonPriceDiscount() {
   
 
   const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
-
+  
   const resultP = document.getElementById("ResultP");
   if(coupons.includes(couponValue)){
     resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
   }else{
     alert("cupón inválido")
+    resultP.innerText = "";
   }
   
- 
 
 }
-
-  
 
 
 // console.log({
