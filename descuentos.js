@@ -16,18 +16,24 @@ function onClickButtonPriceDiscount() {
       "PPP",
       
   ];
+ 
+   
 
   const inputPrice = document.getElementById("InputPrice");
   const priceValue = inputPrice.value;
-  
+
   const inputCoupon = document.getElementById("InputCoupon");
   const couponValue = inputCoupon.value;
 
   let descuento;
 
-  switch(couponValue) {
+  if (couponValue == "") return alert("digite campos vacíos");
+
+  if (priceValue == "") return alert("digite campos vacíos");
+
+    switch(couponValue) {
     case coupons[0]: // "NNSS"
-      descuento = 15;
+      descuento = 19;
     break;
     case coupons[1]: // "RRTT"
       descuento = 30;
@@ -38,19 +44,19 @@ function onClickButtonPriceDiscount() {
   }
   
 
+
   const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
   
+
   const resultP = document.getElementById("ResultP");
-  if(coupons.includes(couponValue)){
+    if(coupons.includes(couponValue)){
     resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
-  }else{
+     }else{
     alert("cupón inválido")
     resultP.innerText = "";
-  }
-  
 
 }
-
+}
 
 // console.log({
 //   precioOriginal,
