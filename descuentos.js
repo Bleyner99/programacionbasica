@@ -17,6 +17,17 @@ function onClickButtonPriceDiscount() {
       "Yeiner",
   ];
  
+// function presionarTecla() {
+
+//   teclaEnter = event.keyCode;
+
+//   if(teclaEnter == 13){
+// console.log(teclaEnter);
+
+//   }
+
+// }
+// window.onkeydown = presionarTecla;
    
 
   const inputPrice = document.getElementById("InputPrice");
@@ -24,6 +35,7 @@ function onClickButtonPriceDiscount() {
 
   const inputCoupon = document.getElementById("InputCoupon");
   const couponValue = inputCoupon.value;
+
 
   let descuento;
 
@@ -47,34 +59,18 @@ function onClickButtonPriceDiscount() {
     break;
   }
   
-  // class coupon {
+  
 
-  //    constructor({
-  //   cupon,
-  //    }) {
-  //    this._cupon = cupon;  
- 
-  //    }
 
-  //    get cupon() {
-  //      return this._cupon;
-  //    }
-          
-  //    set cupon(nuevoCupon){
-  //      if (nuevoCupon === "xxx"){
-  //        alert("va a explotar!!!")
-  //      } else {
-  //        this._name = nuevoCupon;
-  //      }
-  //    }
-  // }
 
   const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
-  
+
+
 
   const resultP = document.getElementById("ResultP");
     if(coupons.includes(couponValue)){
     resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
+    
      }else{
     alert("cupón inválido")
     resultP.innerText = "";
