@@ -14,7 +14,7 @@ function onClickButtonPriceDiscount() {
       "NNSS",
       "RRTT",
       "PPP",
-      
+      "Yeiner",
   ];
  
    
@@ -27,9 +27,9 @@ function onClickButtonPriceDiscount() {
 
   let descuento;
 
-  if (couponValue == "") return alert("digite campos vacíos");
+   if (couponValue == "") return alert("digite campos vacíos");
 
-  if (priceValue == "") return alert("digite campos vacíos");
+   if (priceValue == "") return alert("digite campos vacíos");
 
     switch(couponValue) {
     case coupons[0]: // "NNSS"
@@ -41,9 +41,33 @@ function onClickButtonPriceDiscount() {
     case coupons[2]: // "PPP"
       descuento = 25;
     break;
+    case coupons[3]: // "PPP"
+      alert("Ojo que es de San Cristobal")
+      resultP.innerText = "";
+    break;
   }
   
+  // class coupon {
 
+  //    constructor({
+  //   cupon,
+  //    }) {
+  //    this._cupon = cupon;  
+ 
+  //    }
+
+  //    get cupon() {
+  //      return this._cupon;
+  //    }
+          
+  //    set cupon(nuevoCupon){
+  //      if (nuevoCupon === "xxx"){
+  //        alert("va a explotar!!!")
+  //      } else {
+  //        this._name = nuevoCupon;
+  //      }
+  //    }
+  // }
 
   const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
   
@@ -54,7 +78,6 @@ function onClickButtonPriceDiscount() {
      }else{
     alert("cupón inválido")
     resultP.innerText = "";
-
 }
 }
 
