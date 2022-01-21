@@ -35,6 +35,7 @@ function onClickButtonPriceDiscount() {
 
   const inputCoupon = document.getElementById("InputCoupon");
   const couponValue = inputCoupon.value;
+  
 
 
   let descuento;
@@ -42,6 +43,9 @@ function onClickButtonPriceDiscount() {
    if (couponValue == "") return alert("digite campos vacíos");
 
    if (priceValue == "") return alert("digite campos vacíos");
+
+  //  if (priceValue = "Yeiner") return alert("Ojo que es de San Cristobal");
+  //  resultP.innerText = "";
 
     switch(couponValue) {
     case coupons[0]: // "NNSS"
@@ -54,14 +58,12 @@ function onClickButtonPriceDiscount() {
       descuento = 25;
     break;
     case coupons[3]: // "PPP"
-      alert("Ojo que es de San Cristobal")
-      resultP.innerText = "";
+       alert("Ojo que es de San Cristobal")
+       resultP.innerText = "";
     break;
   }
   
-  
-
-
+                                          
 
   const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
 
