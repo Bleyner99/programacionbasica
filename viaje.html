@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Viaje a Cartagena</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    </head>
+    <body>
+        <form name="formulario1">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="numero_de_personas">Ingresa el valor de numero de personas:</label>
+                        </td>
+                        <td>
+                            <input name="numero_de_personas" required="required" step="0.000001" type="number"/>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2" rowspan="1">
+                            <input value="Procesar" type="button" required="required" onclick="algoritmo();" />
+                            <input type="reset" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="IVA">Valor de IVA:</label>
+                        </td>
+                        <td>
+                            <input name="IVA" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="subtotal">Valor de subtotal:</label>
+                        </td>
+                        <td>
+                            <input name="subtotal" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="total">Valor de total:</label>
+                        </td>
+                        <td>
+                            <input name="total" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <script src="viaje.js">
+            
+        </script>
+    </body>
+</html>

@@ -15,7 +15,15 @@ function onClickButtonPriceDiscount() {
       "RRTT",
       "PPP",
       "Yeiner",
+      "Bleyner",
+      ","
+    
   ];
+
+  
+
+
+ 
  
 // function presionarTecla() {
 
@@ -35,8 +43,8 @@ function onClickButtonPriceDiscount() {
 
   const inputCoupon = document.getElementById("InputCoupon");
   const couponValue = inputCoupon.value;
-  
 
+  
 
   let descuento;
 
@@ -44,10 +52,19 @@ function onClickButtonPriceDiscount() {
 
    if (priceValue == "") return alert("digite campos vacíos");
 
+   if (couponValue == "Bleyner") return alert("mmmm");
+
+   if (couponValue == ".,") return alert("No se permiten signos");
+
+   if (priceValue == ",") return alert("No se permiten signos");
+
+
+
   //  if (priceValue = "Yeiner") return alert("Ojo que es de San Cristobal");
   //  resultP.innerText = "";
 
     switch(couponValue) {
+    // document.getElementById('').src = '';  
     case coupons[0]: // "NNSS"
       descuento = 19;
     break;
@@ -61,13 +78,16 @@ function onClickButtonPriceDiscount() {
        alert("Ojo que es de San Cristobal")
        resultP.innerText = "";
     break;
+    case coupons[4]: // "PPP"
+    
+    
+    break;
+
+    
   }
-  
-                                          
+                                       
 
   const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
-
-
 
   const resultP = document.getElementById("ResultP");
     if(coupons.includes(couponValue)){
