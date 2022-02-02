@@ -54,9 +54,7 @@ function onClickButtonPriceDiscount() {
 
    if (couponValue == "Bleyner") return alert("mmmm");
 
-   if (couponValue == ".,") return alert("No se permiten signos");
-
-   if (priceValue == ",") return alert("No se permiten signos");
+  
 
 
 
