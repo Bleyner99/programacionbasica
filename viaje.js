@@ -1,6 +1,6 @@
 function algoritmo(){
   const coupons = [
-      "bleyner",
+      "bleyner",  
   ];
 
   const inputCoupon = document.getElementById("InputCoupon");
@@ -15,7 +15,13 @@ function algoritmo(){
 
      if( document.formulario1.numero_de_personas.value == "") return alert("digite campos vacíos cv");
 
-    
+    if(document.formulario1.numero_de_personas.value > 5){  
+       alert("maximo 5 personas")
+       return document.formulario1.IVA.value = "";
+      //  document.formulario1.subtotal.value = "";
+      //  document.formulario1.total.value = "";
+    }
+
 
        subtotal = numero_de_personas * 25000;
       
@@ -31,9 +37,12 @@ switch(couponValue) {
     // document.getElementById('').src = '';  
     case coupons[0]: 
       alert("viaje gratis");
-      document.formulario1.IVA.value = "";
-      document.formulario1.subtotal.value = "";
-      document.formulario1.total.value = "";
+      document.formulario1.IVA.value = "0";
+      document.formulario1.subtotal.value = "0";
+      document.formulario1.total.value = "0";
+      break;
+      case coupons[0]:
+        
   }
 
 }
