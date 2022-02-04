@@ -39,22 +39,12 @@ switch(couponValue) {
       document.formulario1.IVA.value = "0";
       document.formulario1.subtotal.value = "0";
       document.formulario1.total.value = "0";
+
+      
       break;
-         
+      case coupons[0]:
+        
   }
-
-
-
-  if(coupons.includes(couponValue) == ""){
-
-    IVA = subtotal* 0.12;
-    total = subtotal + IVA;
-    document.formulario1.IVA.value = IVA;
-    document.formulario1.subtotal.value = subtotal;
-    document.formulario1.total.value = total;
-  }
-
-
  
   if(coupons.includes(couponValue)){
     resultP.innerText = "El resultado es de: $" + document.formulario1.total.value;
@@ -65,8 +55,13 @@ switch(couponValue) {
     document.formulario1.subtotal.value = "";
     document.formulario1.total.value = "";
     
-    
-    }
- 
+    // resultP.innerText = "";
+}
+  //  if(coupons.includes(inputCoupon)){
+  //    return document.formulario1.total.value = total;
+   
+  //  }else{
+  //    alert("cupón invalido");
+  // }
 
 }
