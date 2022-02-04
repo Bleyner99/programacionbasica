@@ -20,11 +20,6 @@ function onClickButtonPriceDiscount() {
     
   ];
 
-  
-
-
- 
- 
 // function presionarTecla() {
 
 //   teclaEnter = event.keyCode;
