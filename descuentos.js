@@ -9,6 +9,11 @@ function calcularPrecioConDescuento(precio, descuento) {
   return precioConDescuento;
 }
 
+function calcularPrecioConPromocion(resultado, promocion){
+  const precioConPromocion = 0 - promocion;
+  precioConPromocion = resultado - 0 ;
+}
+
 function onClickButtonPriceDiscount() {
   const coupons = [
       "NNSS",
@@ -20,19 +25,6 @@ function onClickButtonPriceDiscount() {
     
   ];
 
-// function presionarTecla() {
-
-//   teclaEnter = event.keyCode;
-
-//   if(teclaEnter == 13){
-// console.log(teclaEnter);
-
-//   }
-
-// }
-// window.onkeydown = presionarTecla;
-   
-
   const inputPrice = document.getElementById("InputPrice");
   const priceValue = inputPrice.value;
 
@@ -43,13 +35,21 @@ function onClickButtonPriceDiscount() {
 
   let descuento;
 
+
+  
    if (couponValue == "") return alert("digite campos vacíos");
 
    if (priceValue == "") return alert("digite campos vacíos");
 
-   if (couponValue == "Bleyner") return alert("mmmm");
+  //  if (couponValue == "Bleyner") return alert("mmmm");
 
   
+  if(couponValue == "Bleyner"){
+   
+    
+    
+   
+   }
 
 
 
@@ -71,16 +71,18 @@ function onClickButtonPriceDiscount() {
        alert("Ojo que es de San Cristobal")
        resultP.innerText = "";
     break;
-    case coupons[4]: // "PPP"
+    // case coupons[4]: // "PPP"
     
     
-    break;
+    // break;
 
     
   }
                                        
 
   const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
+
+    
 
   const resultP = document.getElementById("ResultP");
     if(coupons.includes(couponValue)){

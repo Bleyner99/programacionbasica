@@ -1,6 +1,7 @@
 function algoritmo(){
   const coupons = [
-      "bleyner",  
+      "bleyner", 
+      "aldair", 
   ];
 
 
@@ -8,7 +9,7 @@ function algoritmo(){
   const couponValue = inputCoupon.value;
 
 {
-    let IVA, numero_de_personas, subtotal, total ;
+    let IVA, numero_de_personas, subtotal, total;
 
        numero_de_personas = parseFloat (document.formulario1.numero_de_personas.value);
 
@@ -23,6 +24,7 @@ function algoritmo(){
 
 
        subtotal = numero_de_personas * 25000;
+        
       
     IVA = subtotal* 0.12;
     total = subtotal + IVA;
@@ -39,10 +41,11 @@ switch(couponValue) {
       document.formulario1.IVA.value = "0";
       document.formulario1.subtotal.value = "0";
       document.formulario1.total.value = "0";
-
+      break;
+      case coupons[1]:
+      alert("coge una caluladora y resta el 10% al total de la factura e ignora lo que te aparece en pantalla");
       
       break;
-      case coupons[0]:
         
   }
  
