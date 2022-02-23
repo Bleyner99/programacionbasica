@@ -19,6 +19,7 @@ var precio = cantBoletas * 10000;
 
 if(edad <= 5 ){
     alert("No se permiten menores de 5 años");
+    
 
 }else if(edad <= 14){
     descuento = 0.35;
@@ -33,16 +34,16 @@ if(edad <= 5 ){
     descuento = 0.25;
 
 }else if(edad >= 65){
-    descuento = 0.35;
+    descuento = 0.30;
 }
 
 total = precio - descuento;
 // precio = 10000 - descuento;
 
 
-alert("El precio de la boleta es de: " + precio);
+// alert("El precio de la boleta es de: " + precio);
 alert("El descuento es de: " + descuento);
-alert("El precio con descuento es de: " + total);
+alert("El precio de la boleta con descuento es de: " + total);
 
  
 
