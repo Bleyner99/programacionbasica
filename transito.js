@@ -20,9 +20,9 @@ azul = 0;
 
 
 var d = parseInt(prompt("Ingresa el ultimo digito de la placa",""));
-while(n > 0){
+// while(n > 0){
     
-}
+// }
 
 if(d == 1 || d == 2 ){
     amarilla = amarilla + 1;
