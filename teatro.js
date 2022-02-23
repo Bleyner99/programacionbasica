@@ -15,7 +15,7 @@ var edad = parseInt(prompt("Ingresa la edad ",""));
 
 var precio = cantBoletas * 10000;
 
-var total = 10000 - descuento;
+
 
 if(edad <= 5 ){
     alert("No se permiten menores de 5 años");
@@ -36,13 +36,15 @@ if(edad <= 5 ){
     descuento = 0.35;
 }
 
-
+total = precio - descuento;
+// precio = 10000 - descuento;
 
 
 alert("El precio de la boleta es de: " + precio);
 alert("El descuento es de: " + descuento);
+alert("El precio con descuento es de: " + total);
 
- alert("El total con descuento es de " + precio - descuento);
+ 
 
 
 
