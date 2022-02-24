@@ -16,8 +16,7 @@ window.location="inicio.html"}   else{
 }
 }
 
-if(document.getElementById="informe"){
 
-alert("hola");
 
-}
+
+
