@@ -1,3 +1,4 @@
+const { scrypt } = require('crypto')
 const mysql = require('mysql')
 
 const conection = mysql.createConnection({
@@ -20,7 +21,11 @@ conection.query(insertar,(err, rows)=>{
     if(err) throw err
 
 })
+   if(document.form.password.value== password && document.form.login.value== password) {
 
+    alert("Bienvenido");
+
+   }
 
 conection.query('SELECT * from login', (err, rows) => {
   if(err) throw err
@@ -36,5 +41,4 @@ conection.query('SELECT * from login', (err, rows) => {
 
 
 conection.end()
- 
-
+ scrypt

@@ -21,20 +21,21 @@ if(edad <= 5 ){
     alert("No se permiten menores de 5 años");
     
 
+
 }else if(edad <= 14){
-    descuento = 0.35;
+    descuento = precio * 0.35;
 
 }else if(edad <= 19){
-    descuento = 0.25;
+    descuento = precio * 0.25;
 
 }else if(edad <= 45 ){
-    descuento = 0.10;
+    descuento = precio * 0.10;
 
 }else if(edad <= 65){
-    descuento = 0.25;
+    descuento = precio * 0.25;
 
 }else if(edad >= 65){
-    descuento = 0.30;
+    descuento = precio * 0.30;
 }
 
 total = precio - descuento;
