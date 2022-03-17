@@ -4,7 +4,11 @@ var c=123456;
 var u="bleyner";
 
 
-if(document.form.password.value=="" && document.form.login.value== ""){
+
+// if(c >= 8){
+//     alert("no se permiten más de 6 números");
+
+ if(document.form.password.value=="" && document.form.login.value== ""){
 
     alert("Digite campos vacíos");
 
@@ -17,6 +21,25 @@ window.location="inicio.html"}   else{
 }
 
 
+function reg(){
+
+
+    var usuario ;
+    var contraseña ;
+
+
+   
+    if(document.form.usuario.value== usuario && document.form.contraseña== contraseña){
+
+        alert("Usuario creado");
+
+
+
+    }
+
+      
+
+}
 
 
 

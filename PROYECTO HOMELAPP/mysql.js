@@ -16,12 +16,13 @@ conection.connect( (err) =>{
 })
 
 
-const insertar = "INSERT INTO login (id,nombre) VALUES(NULL, 'ALDAX')"
-conection.query(insertar,(err, rows)=>{
-    if(err) throw err
+// const insertar = "INSERT INTO login (id,nombre) VALUES(NULL, 'ALDAX')"
+// conection.query(insertar,(err, rows)=>{
+//     if(err) throw err
 
-})
+// })
    
+
 
 conection.query('SELECT * from login', (err, rows) => {
   if(err) throw err
@@ -31,7 +32,18 @@ conection.query('SELECT * from login', (err, rows) => {
   console.log('La cantidad de resultados es:')
   console.log(rows.length)
   const usuarioUno = rows  [0]
-  console.log(`El usuario se llama ${usuarioUno.nombre} y tiene el id ${usuarioUno.id}`)
+  console.log(`El usuario se llama ${usuarioUno.nombre} y tiene el id ${usuarioUno.ID}`)
+
+//   if(usuarioUno == 0){
+//       alert("bien");
+//   }
+
+})
+
+
+conection.query('SELECT * FROM `login` WHERE 1 ' , (err, rows) => {
+    if(err) throw err
+     
 
 })
 
